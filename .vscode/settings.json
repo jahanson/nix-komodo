@@ -1,0 +1,26 @@
+{
+  "nix.enableLanguageServer": true,
+  "nix.serverPath": "nixd",
+  "nix.formatterPath": "nixfmt",
+  "nix.serverSettings": {
+    "nixd": {
+      "formatting": {
+        "command": [
+          // "nixfmt"
+          // "nixpkgs-fmt"
+          "alejandra"
+        ]
+      }
+    },
+    "nix": {
+      "binary": "nix",
+      "maxMemoryMB": null,
+      "flake": {
+        "autoEvalInputs": true,
+        "autoArchive": true,
+        "nixpkgsInputName": "nixpkgs"
+      }
+    }
+  },
+  "editor.formatOnSave": true,
+}
