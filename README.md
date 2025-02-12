@@ -6,7 +6,7 @@
 
 ```nix
 # Flakes
-nix profile install github:jahanson/nix-komodo#
+nix profile install github:jahanson/nix-komodo
 
 # Non-flakes
 nix-env -iA nixos.radarr
@@ -25,7 +25,9 @@ nix run .#komodo -- --version
 ```
 
 ## Cachix
+
 ### https://app.cachix.org/cache/hsn-flakes
-[Cachix Version Pins](https://app.cachix.org/cache/hsn-flakes#pins) 
+
+[Cachix Version Pins](https://app.cachix.org/cache/hsn-flakes#pins)
 
 Public Key: `hsn-flakes.cachix.org-1:pFP/2u3zLEkaKR4doE07SvYcQHzDQbrdj5y5D+md0Qw=`
